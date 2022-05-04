@@ -9,6 +9,6 @@ import com.naturefarma.naturefarma.model.Categoria;
 
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
-	public List<Categoria> findAllByDescricaoContainingIgnoreCase(String tipo);
+	public List<Categoria> findAllByTipoContainingIgnoreCase(String tipo);
 	
 }
